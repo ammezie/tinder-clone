@@ -26,6 +26,8 @@ class userService {
 
         data.accessToken = await jwt.signAccessToken(user)
 
+        data._id = user._id;
+
         return data
 
     }
